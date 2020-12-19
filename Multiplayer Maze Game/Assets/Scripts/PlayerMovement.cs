@@ -6,7 +6,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     // Configuration parameters
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] 
+    
+    float moveSpeed = 5f;
+    float BoostedSpeed = 7f;
 
     // Cached references
     Rigidbody2D myRigidBody = null;
@@ -45,5 +48,19 @@ public class PlayerMovement : MonoBehaviour {
         if (playerHasHorizontalSpeed) {
             transform.localScale = new Vector2(-Mathf.Sign(myRigidBody.velocity.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
+    }
+
+    public void Boost(float BoostAmt)
+    {
+        
+        if(BoostAmt == 0)
+        {
+            return;
+        }
+        
+        //play sound effect
+        //Effects.PlayBoost
+        //change speed to boostedSpeed
+        moveSpeed = BoostedSpeed;
     }
 }
