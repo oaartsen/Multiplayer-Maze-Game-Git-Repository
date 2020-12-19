@@ -57,7 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Old Scripts\Player2Movement.cs" />
+    <Compile Include="Assets\Scripts\Old Scripts\Killer.cs" />
+    <Compile Include="Assets\Scripts\Old Scripts\CheckIsKiller.cs" />
+    <Compile Include="Assets\Scripts\Old Scripts\PlayerDeath.cs" />
+    <Compile Include="Assets\Scripts\InputPlayer1.cs" />
+    <Compile Include="Assets\Scripts\InputPlayer2.cs" />
+    <Compile Include="Assets\Scripts\InputPlayer3.cs" />
+    <Compile Include="Assets\Scripts\InputPlayer4.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
